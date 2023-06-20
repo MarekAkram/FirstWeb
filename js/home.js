@@ -1,5 +1,5 @@
-var image = document.getElementById("blinkMoveImage");
-var animationInterval;
+const image = document.getElementById("blinkMoveImage");
+let animationInterval;
 
 function startAnimation() {
   animationInterval = setInterval(function () {
@@ -18,9 +18,9 @@ function getRandomOffset() {
 
 startAnimation();
 
-var countElement = document.getElementById("count");
-var count = 0;
-var interval = setInterval(function () {
+const countElement = document.getElementById("count");
+let count = 0;
+const interval = setInterval(function () {
   count++;
   countElement.textContent = count.toLocaleString();
   if (count === 9999) {
